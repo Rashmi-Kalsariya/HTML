@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body bgcolor="lavender">
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+            }
+    
+            html {
+                box-sizing: border-box;
+            }
+    
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+            }
+    
+            .column {
+                float: left;
+                width: 33.3%;
+                margin-bottom: 16px;
+                padding: 0 8px;
+            }
+    
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                margin: 8px;
+            }
+    
+            .about-section {
+                padding: 50px;
+                text-align: center;
+                background-color: #474e5d;
+                color: white;
+            }
+    
+            .container {
+                padding: 0 16px;
+            }
+    
+            .container::after,
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+    
+            .title {
+                color: grey;
+            }
+    
+            .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+            }
+    
+            .button:hover {
+                background-color: #555;
+            }
+    
+            @media screen and (max-width: 650px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        </style>
+        </head>
+    
+        <body>
+    
+            <div class="about-section" id="About">
+                <h1>About Us Page</h1>
+                <p>Some text about who we are and what we do.</p>
+                <p>Resize the browser window to see that this page is responsive by the way.</p>
+            </div>
+    
+            <h2 style="text-align:center">Our Team</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="https://www.rnwmultimedia.edu.in/assets/img/team/RW.Hasmukh-Rafaliya.jpg"
+                            alt="Jane" style="width:100%">
+                        <div class="container">
+                            <h2>Hasmukh sir</h2>
+                            <p class="title">CEO & Founder</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>Hasmukh@example.com</p>
+                            <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <div class="card">
+                        <img src="https://www.rnwmultimedia.edu.in/assets/img/team/RWn.Hitesh-Desai.jpg"
+                            alt="Mike" style="width:100%">
+                        <div class="container">
+                            <h2>HiteshKumar desai </h2>
+                            <p class="title">Art Director</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>hitesh@example.com</p>
+                            <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <div class="card">
+                        <img src="https://seeklogo.com/images/R/red-white-group-of-institutes-logo-58B5B8C48C-seeklogo.com.png"
+                            alt="John" style="width:100%">
+                        <div class="container">
+                            <h2>Our Logo</h2>
+                            <p class="title">Designer</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>rnw@example.com</p>
+                            <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+            <br><br> <br>
+    
+    
+            <center>
+    
+                <h1><u>OUR LOCATION</u></h1>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.8627259345807!2d88.46838035731541!3d22.5842166312905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02755d0d072d15%3A0xdf5786e6ccab4916!2sAPNA%20COLLEGE!5e0!3m2!1sen!2sin!4v1702582987232!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </center>
+            <br>
+            <br>
+    
+    
+            <hr>
+            <hr>
+    
+    
+    
+    
+            <h1 align="center" id="about"><u>RAGISTRATION FORM</u></h1>
+            <br><br>
+    
+            <form align="center">
+                <label for="USERNAME">FIRST NAME : </label>
+                <input type="text" placeholder="YourName" required>
+    
+                <label for="USERNAME">LAST NAME : </label>
+                <input type="text" placeholder="Surname" required>
+                <br><br><br>
+    
+                <label for="GMAIL">EMAIL ID : </label>
+                <input type="email" placeholder="email" required>
+    
+                <br><br><br>
+    
+                <label for="gender">GENDER :</label>
+                <select name="gender" id="female">
+                    <option value="male" name="female">FeMale</option>
+                    <option value="female" name="male">Male</option>
+                    <option value="other" name="other">Other</option>
+                </select>
+    
+                <br><br><br>
+    
+                <label for="NUMBER">MOBILE NO : </label>
+                <input type="number" placeholder="number" maxlength="10" required>
+    
+                <label>ADDRESS : </label>
+                <input type="text" placeholder="Your Address" required>
+                <br><br><br>
+    
+                <label>CITY NAME: </label>
+                <input type="text" placeholder="City" required>
+                <label>PIN CODE : </label>
+                <input type="number" placeholder="395004" required>
+                <br><br><br>
+    
+                <label>STATE : </label>
+                <input type="text" placeholder="Your State">
+                <br><br><br>
+    
+                <label>COUNT : </label>
+                <input type="text" placeholder="india" required>
+                <br><br><br>
+    
+                <label for="COURSE">COURSE : </label>
+                <select name="role" id="course" required>
+                    <option value="-1">course</option>
+                    <option value="flutter">FLUTTER</option>
+                    <option value="gim">GIM(GRADUATE IN MULTIMEDIA)</option>
+                    <option value="web">FULL STACK WEB DEVELOPMENT</option>
+                    <option value="ui">UI/UX</option>
+                    <option value="ani">ANIMATION</option>
+                    <option value="vfx">VFX(studio)</option>
+                    <option value="game">GAME DEVELOPMENT</option>
+                    <option value="des">DESIGNING</option>
+                    <option value="ai">AI(artificial intelligent)</option>
+                </select>
+    
+                <br><br><br>
+    
+                <label for="submit"></label>
+                <input type="submit" placeholder="submit">
+                <br><br><br>
+    
+    
+    
+                <br><br>
+    
+            </form>
+    
+        </body>
+</body>
+</html>
